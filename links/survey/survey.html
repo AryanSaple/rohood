@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../formStyles.css">
+    <title>Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="text-center">
+        <h1 id="title">Ochima Foundation Survey Form</h1>
+      </header>
+      <form action="#" id="survey-form" class="form-label">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="number" id="number-label">Phone Number</label>
+          <input
+            type="number"
+            name="phone"
+            id="number"
+            placeholder="Enter your phone number"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="dropdown"
+            >Which option best describes your current role?</label
+          >
+          <select name="dropdown" id="dropdown" class="form-control" required>
+            <option disabled>Select current role</option>
+            <option value="Student">Student</option>
+            <option value="Full Time Job">Full Time Job</option>
+            <option value="Other">Others</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Have you ever been diagnosed with COVID-19?</p>
+          <p>
+            <label>
+              <input type="radio" name="answer" id="definitely" />
+              Yes
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="radio" name="answer" id="notsure" />
+              No
+            </label>
+          </p>
+        </div>
+
+        <div class="form-group">
+          <p>How has 2nd wave affected you and your family?</p>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="50"
+            rows="2"
+            placeholder="Enter here..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <p>How has this organisation helped you overcome your hardships during pandemic situation?</p>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="50"
+            rows="2"
+            placeholder="Enter here..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <p>What is the number of employed people in your house?</p>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="50"
+            rows="2"
+            placeholder="Enter here..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <p>What is the average salary of your family?</p>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="50"
+            rows="2"
+            placeholder="Enter here..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <p>Are you under any debt?</p>
+          <p>
+            <label>
+              <input type="radio" name="answer" id="definitely" />
+              Yes
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="radio" name="answer" id="notsure" />
+              No
+            </label>
+          </p>
+        </div>
+
+        <div class="form-group">
+          <p>If the answer to above question is yes then state the amount.</p>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="50"
+            rows="2"
+            placeholder="Enter here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <p>Other Comments</p>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="50"
+            rows="2"
+            placeholder="Enter here..."
+          ></textarea>
+        </div>
+
+        <div class="uploadImage">
+          <label for="">Upload images (if any)</label>
+          <input type="file" id="default-btn"  name="" value="">
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+
+      </form>
+      <p id="description" class="description">
+        <em>Thank you for taking the time to fill this survey.</em>
+      </p>
+    </div>
+    <footer>
+      <h6>© COPYRIGHT OCHIMA FOUNDATION</h6>
+    </footer>
+  </body>
+</html>

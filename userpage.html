@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./userpage.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Userpage</title>
+    <script src="sign_up/db.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="title"> <h2>Ochima</h2> </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+            <span class="icon"><i class="fas fa-address-card"></i></span>
+            <span class="title">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="./links/survey/survey.html">
+            <span class="icon"><i class="fas fa-edit"></i></span>
+            <span class="title">Survey</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+            <span class="icon"><i class="fas fa-user-edit"></i></span>
+            <span class="title"> Edit Profile </span>
+            </a>
+          </li>
+          <li>
+            <a href="./links/connect/connect.html">
+            <span class="icon"><i class="fab fa-connectdevelop"></i></span>
+            <span class="title">Connect with us</span>
+            </a>
+          </li>
+          <li>
+            <a href="./links/raiseIssue/raiseIssue.html">
+            <span class="icon"><i class="fas fa-exclamation-triangle"></i></span>
+            <span class="title"> Raise an issue</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+            <span class="icon"><i class="fas fa-home"></i></span>
+            <span class="title"> back to Home </span>
+            </a>
+          </li>
+          <li>
+            <a id="logout">
+            <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+            <span class="title">Log out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle" onclick="toggleMenu();"><i class="fas fa-bars"></i></div>
+          <div class="search">
+            <label>
+              <input type="text" placeholder="Search Here">
+              <i class="fas fa-search"></i>
+            </label>
+          </div>
+          <div class="user">
+            <img src="./assets/user.jpg" alt="user img">
+          </div>
+        </div>
+
+
+        <div class="cardBox">
+          <div class="card">
+            <div>
+              <div class="numbers">1,244</div>
+              <div class="cardName">Total Surveys Conducted</div>
+            </div>
+            <div class="iconBox">
+              <i class="fas fa-poll"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">546</div>
+              <div class="cardName">Other data</div>
+            </div>
+            <div class="iconBox">
+              <i class="fas fa-poll"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">8,546</div>
+              <div class="cardName">Other data</div>
+            </div>
+            <div class="iconBox">
+              <i class="fas fa-poll"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">245</div>
+              <div class="cardName">Other data</div>
+            </div>
+            <div class="iconBox">
+              <i class="fas fa-poll"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="details">
+          <div class="recentOrders">
+            <div class="cardHeader">
+              <h2>Covid-19 Updates</h2>
+              <a href="#" class="btn">View All</a>
+            </div>
+               <img src="./assets/graph.jpg" alt="">
+          </div>
+          <div class="recentCustomers">
+            <div class="cardHeader">
+              <h2>Survey</h2>
+              <a href="#" class="btn">View All</a>
+            </div>
+            <img src="./assets/survey.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <script>
+      function toggleMenu(){
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+        toggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+        main.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>
