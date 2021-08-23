@@ -37,13 +37,13 @@ function showpass(){
 }
 
 var firebaseConfig = {
-    apiKey: "AIzaSyDfdN_GDBB9LpvNYfaY7fX_gMDC439UQiw",
-    authDomain: "ochima-sparcxxi.firebaseapp.com",
-    projectId: "ochima-sparcxxi",
-    storageBucket: "ochima-sparcxxi.appspot.com",
-    messagingSenderId: "361122248050",
-    appId: "1:361122248050:web:5065b8238d95f5122e59eb",
-    measurementId: "G-YSHYQ0J3RT"
+    apiKey: "AIzaSyDnTEWjeHFIzX4EKc0ZYo03fs46l3boul4",
+    authDomain: "rohood-d6b19.firebaseapp.com",
+    projectId: "rohood-d6b19",
+    storageBucket: "rohood-d6b19.appspot.com",
+    messagingSenderId: "886346573296",
+    appId: "1:886346573296:web:e73779af35c67f4272a935",
+    measurementId: "G-Z9P47RBW2E"
 };
 firebase.initializeApp(firebaseConfig);
 firebase.auth.Auth.Persistence.LOCAL;
