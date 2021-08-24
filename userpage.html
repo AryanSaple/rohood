@@ -5,7 +5,38 @@
     <link rel="stylesheet" href="./userpage.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Userpage</title>
-    <script src="sign_up/db.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyDfdN_GDBB9LpvNYfaY7fX_gMDC439UQiw",
+        authDomain: "ochima-sparcxxi.firebaseapp.com",
+        projectId: "ochima-sparcxxi",
+        storageBucket: "ochima-sparcxxi.appspot.com",
+        messagingSenderId: "361122248050",
+        appId: "1:361122248050:web:5065b8238d95f5122e59eb",
+        measurementId: "G-YSHYQ0J3RT"
+      };
+      firebase.initializeApp(firebaseConfig);
+      firebase.auth.Auth.Persistence.LOCAL;
+      firebase.analytics();
+      $(document).ready(function (){
+        console.log( "testing.." );
+        var user = firebase.auth().currentUser;
+        console.log(user);
+        $("#logout").click(function (){
+          firebase.auth().signOut().then(() => {
+            window.location.replace("sign_up/sign.html");
+          }).catch((error) => {
+            window.alert("Pardonne moi s'il te plait \nSome error occurred!!");
+          });
+        });
+      })
+    </script>
   </head>
   <body>
     <div class="container">
