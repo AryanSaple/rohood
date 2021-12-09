@@ -621,6 +621,20 @@
     transition: 0.3s ease-in;
     cursor: pointer;
   }
+
+  .services__card a{
+    text-decoration: none;
+    color: white;
+  }
+  .services__card a:hover{
+    text-decoration: none;
+    color: white;
+  }
+  .services__card a:visited{
+    text-decoration: none;
+    color: white;
+  }
+
   
   @media screen and (max-width: 1300px) {
     .services__wrapper {
